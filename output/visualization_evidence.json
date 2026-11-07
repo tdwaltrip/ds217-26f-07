@@ -1,0 +1,40 @@
+{
+  "critique": [
+    {
+      "category": "unsupported claim",
+      "problem": "The graph title states center based rehab caused better attendence, but causation cannot be established by the data.",
+      "repair": "Use a title that describes attendance by program and quarter without causation claim."
+    },
+    {
+      "category": "truncated baseline",
+      "problem": "The y axis incorrectly starts at 76 instead of 0 which exaggerates the difference.",
+      "repair": "Start the y axis at 0 and end it at 100."
+    },
+    {
+      "category": "missing unit",
+      "problem": "There is no y axis label that clarifies attendance is measured as a percentage.",
+      "repair": "Label the y axis appropriately with Scheduled sessions attended (%)."
+    },
+    {
+      "category": "color-only encoding",
+      "problem": "The same hatch pattern is used for both programs which makes them only distinguishable by color.",
+      "repair": "For each program use different hatch patterns and colors."
+    },
+    {
+      "category": "distracting decoration",
+      "problem": "The dark grid lines, the thick bar outlines, and crosshatching make the chart hard to read.",
+      "repair": "The bars should be labeled directly, any heavy outlines and grid lines need to be removed, and hatching needs to be simplified."
+    }
+  ],
+  "question": "How do the achievement rates of weekly exercise goals differ between home-based and center-based rehabilitation programs across 4 follow up visits?",
+  "audience": "The rehabilitation program coordinator will use the chart to decide if there needs to be additional follow ups.",
+  "intended_claim": "At visit 4, 79% of center based patients met the exercise goal compared to the 70% of home based patients.",
+  "y_measure": "Percentage of patients seen who met the weekly 150 minute exercise goal (%).",
+  "grain": "One rehabilitation program at one follow-up visit.",
+  "data_types": {
+    "program": "categorical",
+    "visit_number": "ordinal",
+    "goal_met_pct": "quantitative"
+  },
+  "text_alternative": "The line chart shows the percentage of patients meeting their weekly 150-minute exercise goal across four follow-up visits. The x-axis shows the follow-up visit number, and the y-axis shows the percentage of patients meeting the goal. Home-based patients increased from 58% at visit 1 to 70% at visit 4, while center-based patients increased from 57% to 79%. At visit 4, center-based patients had a 9-percentage-point higher rate (79% versus 70%). Patients chose their program, so this does not establish causation. Each percentage also includes only patients seen at that visit, which is approximately 45 per program, so the difference could be due to random variation or differences in the patients who returned."
+}
